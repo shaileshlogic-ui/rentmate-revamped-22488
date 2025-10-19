@@ -62,21 +62,15 @@ const Index = () => {
       <Header />
 
       {/* Hero Section */}
-      <section
-        className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(${heroImage})` }}
-      >
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
-            India's No.1 Online
-            <br />
-            <span className="text-accent">Transport Booking</span> Site
-          </h1>
-          <p className="text-xl text-white/90 mb-8 animate-fade-in">
-            Book cabs, transport, DJ services, and more with just a few clicks
-          </p>
+      <section className="relative bg-muted/30 py-16">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-8">
+            <h1 className="text-4xl md:text-5xl font-bold mb-3 animate-fade-in">
+              Compare transport deals from <span className="text-accent">100s of sites</span>
+            </h1>
+          </div>
 
-          <div className="mt-8">
+          <div className="max-w-4xl mx-auto">
             <SearchBar />
           </div>
         </div>
